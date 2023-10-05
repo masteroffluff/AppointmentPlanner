@@ -1,3 +1,10 @@
+Part of the full stack Developer course on Coecademy
+
+Makes use of react and the useState and useEffect hooks to save contacts and appointments to a page.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -36,10 +36,10 @@ export const AppointmentForm = ({
   return (
     <>
     <form onSubmit={handleSubmit}>
-      <input name="title" type="text" value={title}  onChange={handleChangeTitle}/>
-      <input name="date" type="date" value={date} onChange={handleChangeDate} min={getTodayString()}/>
-      <input name="time" type="time" value={time} onChange={handleChangeTime}/>
-      <ContactPicker name="contact" contacts={contacts} callback={handleChangeContact} value={contact} />
+      <input name="title" aria-label="title" type="text" value={title}  onChange={handleChangeTitle}/>
+      <input name="date" aria-label="date"  type="date" value={date} onChange={handleChangeDate} min={getTodayString()}/>
+      <input name="time" aria-label="time" type="time" value={time} onChange={handleChangeTime}/>
+      <ContactPicker aria-label="contact" name="contact" contacts={contacts} callback={handleChangeContact} value={contact} />
       <input type="submit" value="Submit" />
     </form>
     

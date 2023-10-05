@@ -22,10 +22,10 @@ export const ContactForm = ({
   return (
     <>
     <form onSubmit={handleSubmit}>
-      <input name="name" type="text" value={name} onChange={handleChangeName} /> 
-      <input name="email" type="email" value={email} onChange={handleChangeEmail} /> 
-      <input name="phone" type="phone" value={phone} onChange={handleChangePhone} pattern="0\d{10}"/>  
-      <input name="submit" type="submit" />
+      <input name="name" type="text" aria-label="name" value={name} onChange={handleChangeName} /> 
+      <input name="email" type="email" aria-label="email" value={email} onChange={handleChangeEmail} /> 
+      <input name="phone" type="phone" aria-label="phone" value={phone} onChange={handleChangePhone} pattern="0\d{10}"/>  
+      <input name="submit" type="submit" aria-label="submit" />
     </form>
     
     </>
